@@ -1,0 +1,39 @@
+    body {
+      background-color: #bbbbbe !important; 
+    }
+    
+    #calendar{ 
+      max-width: 95%;
+      max-height: 80%;
+      margin: 1rem ;
+      margin-right: 4rem;
+      margin-left: 4rem;
+      Width:100%;
+      box-align: auto;
+      
+    }
+    
+    #leyendaAgenda{
+      padding-top: 10rem;
+      border-color: black;
+    }
+
+  #cuadroLeyenda{
+    margin-top: 20rem;
+    margin-left: 5rem;
+  }
+  
+  .leyenda_agenda{
+    width: 5rem;
+    height: 3.5rem;
+    margin-top: 17.7rem;
+  }
+
+.tituloCalendario{
+  text-align: center;
+  padding-left: 3.5rem;
+  background-color: #bbbbbe;
+}
+
+
+

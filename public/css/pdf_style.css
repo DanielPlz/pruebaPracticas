@@ -1,0 +1,49 @@
+/* PDF */
+.encabezado_pdf{
+    background: #484AF0;
+    margin: 20px;
+    color: white;
+}
+.table_paciente{
+    border: 1px solid #484AF0 !important;
+}
+.table_info{
+    border: 1px solid #11B7DC !important; 
+}
+.table_manuales{
+    /* border: 1px solid #1CC961 !important;  */
+    border: 1px solid #11B7DC !important;
+}
+.table_sesiones{
+    border: 1px solid  #11B7DC !important; 
+}
+.ctn-table-manuales{
+    /* background: #1CC961 !important; */
+    background: #11B7DC !important;
+    color: white;
+}
+.ctn-table-sesiones{
+    background: #11B7DC !important;
+    color: white;
+}
+.letra_tabla{
+    font-size: 12px;
+}
+.ctn_manual{
+    position: relative;
+    top: 40px;
+}
+.ctn_sesion{
+    position: relative;
+    top: 60px;
+}
+.subtitulo{
+    /* background: #11B7DC; */
+    background:#1CC961;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+}
+tbody{
+    border: 1px solid blue;
+}

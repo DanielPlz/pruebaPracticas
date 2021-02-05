@@ -1,0 +1,290 @@
+/*
+    CSS Colores
+    Paleta de colores definidacontent:
+    Primarios
+        * #484AF0: Indigo
+        * #FFBB00: Yellow
+    Secundarios
+        * #1CC961: Green
+        * #FF4343: Red
+        * #11B7DC: Lightblue
+        * #F6F9FF: Lightgray
+    Color de texto
+        * #FFFFFF: White
+        * #000000: Black
+        * #B0B5C6: Blue grey
+        * #1A3365: Dark blue
+*/
+
+
+/*
+    Background colors
+*/
+
+.transparent {
+    background-color: transparent !important;
+}
+
+.red {
+    background-color: #FF4343 !important;
+}
+
+.pink {
+    background-color: #FF4057 !important;
+}
+
+.yellow {
+    background-color: #FFBB00 !important;
+}
+
+.green {
+    background-color: #1CC961 !important;
+}
+
+.lightblue {
+    background-color: #11B7DC !important;
+}
+
+.indigo {
+    background-color: #484AF0 !important;
+}
+
+.darkblue {
+    background-color: #1A3365 !important;
+}
+
+.black {
+    background-color: #000000 !important;
+}
+
+.bluegray {
+    background-color: #B0B5C6 !important;
+}
+
+.lightgray {
+    background-color: #F6F9FF !important;
+}
+
+.white {
+    background-color: #ffffff !important;
+}
+
+
+/*
+    Text colors
+*/
+
+.red-text {
+    color: #FF4343 !important;
+}
+
+.pink-text {
+    color: #FF4057 !important;
+}
+
+.yellow-text {
+    color: #FFBB00 !important;
+}
+
+.green-text {
+    color: #1CC961 !important;
+}
+
+.lightblue-text {
+    color: #11B7DC !important;
+}
+
+.indigo-text {
+    color: #484AF0 !important;
+}
+
+.darkblue-text {
+    color: #1C2331 !important;
+}
+
+.black-text {
+    color: #000000 !important;
+}
+
+.bluegray-text {
+    color: #969BAA !important;
+}
+
+.lightgray-text {
+    color: #D8DAE0 !important;
+}
+
+.white-text {
+    color: #ffffff !important;
+}
+
+
+/*
+    Border colors
+*/
+
+.red-border {
+    border: 1px solid #FF4343 !important;
+}
+
+.yellow-border {
+    border: 1px solid #FFBB00 !important;
+}
+
+.green-border {
+    border: 1px solid #1CC961 !important;
+}
+
+.lightblue-border {
+    border: 1px solid #11B7DC !important;
+}
+
+.indigo-border {
+    border: 1px solid #484AF0 !important;
+}
+
+.darkblue-border {
+    border: 1px solid #1A3365 !important;
+}
+
+.black-border {
+    border: 1px solid #000000 !important;
+}
+
+.bluegray-border {
+    border: 1px solid #B0B5C6 !important;
+}
+
+.lightgray-border {
+    border: 1px solid #F6F9FF !important;
+}
+
+.white-border {
+    border: 1px solid #ffffff !important;
+}
+
+
+/*
+    Overlay colors
+*/
+
+.red-overlay {
+    background-color: rgba(229, 90, 90, .90) !important;
+}
+
+.yellow-overlay {
+    background-color: rgba(255, 187, 0, .90) !important;
+}
+
+.green-overlay {
+    background-color: rgba(28, 201, 97, .90) !important;
+}
+
+.lightblue-overlay {
+    background-color: rgba(17, 183, 220, .90) !important;
+}
+
+.indigo-overlay {
+    background-color: rgba(72, 74, 240, .87) !important;
+}
+
+.darkblue-overlay {
+    background-color: rgba(26, 51, 101, .90) !important;
+}
+
+.black-overlay {
+    background-color: rgba(0, 0, 0, .90) !important;
+}
+
+.bluegray-overlay {
+    background-color: rgba(176, 181, 198, .90) !important;
+}
+
+.lightgray-overlay {
+    background-color: rgba(246, 249, 255, .90) !important;
+}
+
+.white-overlay {
+    background-color: rgba(255, 255, 255, .90) !important;
+}
+
+
+/*
+    Hover and Focus effect
+*/
+
+.google {
+    background-color: #db4a39 !important;
+}
+
+.facebook {
+    background-color: #3b5998 !important;
+}
+
+.custom-select:hover,
+.custom-select:focus,
+textarea:focus,
+textarea:hover,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+input:hover,
+.uneditable-input:focus,
+.btn.google:hover,
+.btn.google:focus,
+.btn.facebook:hover,
+.btn.facebook:focus,
+.btn.red:hover,
+.btn.red:focus,
+.btn.yellow:hover,
+.btn.yellow:focus,
+.btn.green:hover,
+.btn.green:focus,
+.btn.lightblue:hover,
+.btn.lightblue:focus,
+.btn.indigo:hover,
+.btn.indigo:focus,
+.btn.darkblue:hover,
+.btn.darkblue:focus,
+.btn.black:hover,
+.btn.black:focus,
+.btn.bluegray:hover,
+.btn.bluegray:focus,
+.btn.white:hover,
+.btn.white:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, .15) !important;
+}
+
+.custom-select:hover,
+.custom-select:focus,
+textarea:focus,
+textarea:hover,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+input:hover {
+    border: 1px solid #484AF0 !important;
+    color: #484AF0 !important;
+}

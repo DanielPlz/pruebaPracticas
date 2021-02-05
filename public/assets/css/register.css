@@ -1,0 +1,125 @@
+.auth-wrapper {
+    position: relative;
+    min-height: 100vh;
+   
+
+}
+.align-items-center {
+    align-items: center!important;
+}
+.justify-content-center {
+    justify-content: center!important;
+}
+.d-flex {
+    display: flex!important;
+}
+* {
+    outline: 0;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.auth-wrapper .auth-box.on-sidebar {
+    position: absolute;
+    top: 0;
+    right: -50rem;
+    height: 100%;
+    width: 150%;
+}
+.auth-box{
+padding-left: 50rem !important;
+box-shadow: 10px 10px 20px #666;
+}
+.on-sidebar{
+    margin-left: 50rem !important;
+}
+.auth-wrapper .auth-box {
+    box-shadow: 1px 0 20px rgba(0,0,0,.08);
+    margin: 10% 0;
+    max-width: 400px;
+    width: 90%;
+}
+
+.auth-wrapper #recoverform {
+    display: none
+
+}
+
+.p-4 {
+    padding: 1.5rem!important;
+}
+.m-0 {
+    margin: 0!important;
+}
+.rounded {
+    border-radius: 4px!important;
+}
+.bg-white {
+    background-color: #fff!important;
+}
+* {
+    outline: 0;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.form-material .form-group {
+    overflow: hidden
+}
+.form-material .form-control {
+    background-color: rgba(0, 0, 0, 0);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 0 2px, 100% 1px;
+    padding: 0;
+    transition: background 0s ease-out 0s;
+    height: calc(2.25rem + 2px)
+}
+.form-material .form-control,
+.form-material .form-control.focus,
+.form-material .form-control:focus {
+    background-image: linear-gradient(#398bf7, #398bf7), linear-gradient(#e9ecef, #e9ecef);
+    border: 0 none;
+    border-radius: 0;
+    box-shadow: none!important;
+    float: none;
+    background-position: bottom
+}
+.form-material .form-control.focus,
+.form-material .form-control:focus {
+    background-size: 100% 2px, 100% 1px;
+    outline: 0 none;
+    transition-duration: .3s
+}
+
+.news-caption{
+    position: auto;
+    margin-right: 50rem;
+    padding-left: 2rem;
+    padding-top: 35rem;
+    margin-left: 5rem;
+}
+
+.caption-title{
+    color: #000;
+}
+.bienvenida{
+    text-shadow: 3px 1px 8px #fff;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    border-radius: 2rem;
+}
+
+.contenedor_conf{
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.5) !important;
+    text-align: center;
+    border-radius: 2rem;
+}
+#formulario{
+    padding-left: 0rem;
+}
+ /**- Margen para formulario-**/

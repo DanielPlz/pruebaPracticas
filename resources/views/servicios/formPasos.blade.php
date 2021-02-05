@@ -1,0 +1,209 @@
+<!-- tab paso 1: Datos del servicio -->
+
+<div class="tab text-4">
+    <div class="text-center mb-4">
+        <h1 class="title-4 darkblue-text">
+            Ingrese los datos del servicio
+        </h1>
+    </div>
+    <div class="form-group row pl-3 pr-3 mb-3">
+        <div class="col-md-12 mb-3 mb-lg-0">
+            <label for="nombre" class="text-5 darkgray-text text-bold">{{ __('* Nombre') }}</label>
+            <input id="nombre" type="text" class="form-control text-4 bluegray-text validar" name="nombre" placeholder="Ingrese un nombre al servicio" required>
+            @error('nombre')
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror
+        </div>
+    </div>
+    <div class="form-group row pl-3 pr-3 mt-4 mb-3">
+        <label class="col-md-12 text-5 darkgray-text text-bold">{{ __('Descripción') }}</label>
+        <div class="col-md-12">
+            <textarea class="form-control pt-2 pb-2 text-4 bluegray-text" name="descripcion" placeholder="Máx. 150 caracteres" maxlength="150"></textarea>
+        </div>
+    </div>
+    <div class="form-group row pl-3 pr-3 mb-3">
+        <label for="duracion" class="col-md-12 text-5 darkgray-text text-bold">{{ __('* Duración') }}</label>
+        <div class="col-12">
+            <select name="duracion" id="duracion" class="form-control form-control-sm validar @error('duracion') is-invalid @enderror" required>
+                <option value="">-</option>
+                <option value="00:15:00">15 minutos</option>
+                <option value="00:30:00">30 minutos</option>
+                <option value="01:00:00">60 minutos</option>
+                <option value="01:30:00">90 minutos</option>
+            </select>
+            @error('duracion')
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror
+        </div>
+    </div>
+</div>
+
+<!-- tab paso 2: Modalidad de atención -->
+
+<div class="tab">
+    <div class="text-center mb-4">
+        <h1 class="title-4 darkblue-text">
+            Modalidad de atención
+        </h1>
+    </div>
+    <div class="row no-gutters d-flex justify-content-center mb-3">
+        <div class="col-2 col-lg-2">
+            <div class="card-body p-lg-3 p-2">
+                <div class="form-check">
+                    <label > 
+                        <input type="checkbox" class="form-check-input validar" id="presencial" name="presencial" value="1">
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="col-10 col-lg-10 align-self-center">
+            <div class="card-body p-lg-3 p-2 lightgray-border">
+                <h3 class="text-4 darkgray-text mb-0"> Presencial</h3>
+            </div>
+        </div>
+    </div>
+    <div class="row no-gutters d-flex justify-content-center mb-3">
+        <div class="col-2 col-lg-2">
+            <div class="card-body p-lg-3 p-2">
+                <div class="form-check">
+                    <label> 
+                        <input type="checkbox" class="form-check-input validar" id="online" name="online" value="1">        
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="col-10 col-lg-10 align-self-center">
+            <div class="card-body p-lg-3 p-2 lightgray-border">
+                <h3 class="text-4 darkgray-text mb-0"> Atención remota</h3>
+            </div>
+        </div>
+    </div>
+    <div class="row no-gutters d-flex justify-content-center mb-3">
+        <div class="col-2 col-lg-2">
+            <div class="card-body p-lg-3 p-2">
+                <div class="form-check">
+                    <label>
+                        <input type="checkbox" class="form-check-input validar" id="visita" name="visita" value="1"> 
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="col-10 col-lg-10 align-self-center">
+            <div class="card-body p-lg-3 p-2 lightgray-border">
+                <h3 class="text-4 darkgray-text mb-0"> Visita domiciliaria</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- tab paso 3 Seleccionar precios y previsiones disponibles  -->
+
+<div class="tab">
+    <div class="text-center">
+        <h1 class="title-4">Previsiones disponibles</h1>
+    </div>
+    <div class="row no-gutters d-flex justify-content-center mb-3">
+        <div class="col-2 col-lg-2">
+            <div class="card-body p-lg-3 p-2">
+                <div class="form-check">
+                    <label > 
+                        <input class="form-check-input validarPrevision" type="checkbox" id="checkFonasa" value="fonasa">
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="col-10 col-lg-10 align-self-center">
+            <div class="card-body p-lg-3 p-2 lightgray-border">
+                <span >Fonasa
+                    <input type="number" class="form-control form-control-sm precios @error('fonasa') is-invalid @enderror" id="precioFonasa" name="precioFonasa" placeholder="Precio en Fonasa">
+                </span>
+                @error('fonasa')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                @enderror
+            </div>
+        </div>
+    </div>
+    <div class="row no-gutters d-flex justify-content-center mb-3">
+        <div class="col-2 col-lg-2">
+            <div class="card-body p-lg-3 p-2">
+                <div class="form-check">
+                    <label> 
+                        <input class="form-check-input validarPrevision" type="checkbox" id="checkIsapre" value="isapre">      
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="col-10 col-lg-10 align-self-center">
+            <div class="card-body p-lg-3 p-2 lightgray-border">
+                <span >Isapre
+                    <input type="number" class="form-control form-control-sm precios" id="precioIsapre" name="precioIsapre" placeholder="Precio en Isapre">
+                </span>
+            </div>
+            <div class="container">
+                <div id="checkboxesLeft" class="divIsapre">
+                    <div class="form-check">
+                        <label for="one">
+                            <input type="checkbox" class="isapres" id="banmedica" name="banmedica" value="1"/> Banmédica
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label for="two">
+                            <input type="checkbox" class="isapres" id="consalud" name="consalud" value="1"/> Consalud
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label for="three">
+                            <input type="checkbox" class="isapres" id="colmena" name="colmena" value="1"/> Colmena
+                        </label>
+                    </div>
+                </div>
+                <div id="checkboxesRight" class="divIsapre">
+                    <div class="form-check">
+                        <label for="four">
+                            <input type="checkbox" class="isapres" id="cruzBlanca" name="cruzBlanca" value="1"/> CruzBlanca
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label for="five">
+                            <input type="checkbox" class="isapres" id="masVida" name="masVida" value="1"/> Nueva Masvida
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label for="six">
+                            <input type="checkbox" class="isapres" id="vidaTres" name="vidaTres" value="1"/> Vida Tres
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row no-gutters d-flex justify-content-center mb-3">
+        <div class="col-2 col-lg-2">
+            <div class="card-body p-lg-3 p-2">
+                <div class="form-check">
+                    <label>
+                        <input class="form-check-input validarPrevision" type="checkbox" id="checkParticular" value="particular">
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="col-10 col-lg-10 align-self-center">
+            <div class="card-body p-lg-3 p-2 lightgray-border">
+                <span >Particular
+                    <input type="number" class="form-control form-control-sm precios" id="precioParticular" name="precioParticular" placeholder="Precio particular">
+                </span>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<!-- LLamada a script para mostrar/ocultar precios y agregar/quitar clases a los campos de precios -->
+
+<script src="{{asset('assets/js/servicios/hideShowPrecios.js')}}"></script> 

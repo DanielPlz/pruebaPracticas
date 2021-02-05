@@ -1,0 +1,50 @@
+/*search box css start here*/
+.search-sec{
+    padding: 2rem;
+
+}
+.search-slt{
+    display: block;
+    width: 100%;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: #2a3741e7;
+    background-color: #fff;
+    background-image: none;
+    border: 5px solid #fff;
+    height: calc(3rem + 2px) !important;
+    border-radius:0;
+   
+}
+.wrn-btn{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    height: calc(3rem + 2px) !important;
+    border-radius:6px;
+}
+@media (min-width: 1000px){
+    .search-sec{
+        position: relative;
+        top: -114px;
+        background: rgba(77, 107, 204, 0.51);
+    }
+}
+
+@media (max-width: 992px){
+    .search-sec{
+        background: #1A4668;
+    }
+}
+
+.menu-fixed {
+     position: fixed;
+     z-index: 1000;
+     top: 10px;
+     width: 100%;
+     max-width: 1000px;
+     box-shadow: 0px 4px 3px rgba(0,0,0, .5);
+    
+    
+  } 
